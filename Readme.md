@@ -32,3 +32,48 @@ Starting with very basics, we will start with API Development... Learn the basic
     - Write a path operation decorator (like @app.get("/")).
     - Write a path operation function (like def root(): ... above).
     - Run the development server (like uvicorn main:app --reload).
+
+## Task 2
+
+*We learnt the basics of API development and basics of FastAPI yesterday. While there is so much deep dive still about to happen, let's complete the basic building blocks first.*
+
+Today, being Sunday I guess we can cover more topics...
+- [x] Start learning MongoDB - https://www.mongodb.com/docs/manual/introduction/
+  - A record in MongoDB is a document, a data structure composed kof key(field) and value pairs
+  - MongoDB  Documents are similar to JSON Objects
+  - Provide High Performance, High availability, horizontal scalability
+- [x] Spin up a FREE FOREVER cluster on MongoDB Atlas (MongoDB Cloud) to learn and test your hands-on exercises - https://www.mongodb.com/docs/manual/tutorial/getting-started/
+  - This is an in browser tutorial, hence no installations required
+  - I tried to connect to my MongoDB using the VScode following this [tutorial](https://www.mongodb.com/docs/mongodb-vscode/connect/)
+    - I was uanble to connect to my db because of authentication issue
+    - To resolve that I have to enable DB access from my IP address or rom anywhere under Security settings in MongoDB Cloud dashboard
+  - I am able to create a [mongo db playground](playground/mongodb/playground-1.mongodb.js) in VS Code
+  - Ran and tested it succesfully
+- [x] What are Databases, Collections, Documents? https://www.mongodb.com/docs/manual/core/databases-and-collections/
+    IMP: Do not learn about Views, Capped Collections and Clustered Collections.
+    - Got to know about the BSON Objects and how its different from JSON
+    -Learnt about the Unique identifiers for collections in a DB based on uuid
+- [x] Basic CRUD operations - https://www.mongodb.com/docs/manual/crud/
+    - Important to see syntax, and then the examples...
+    - Learn about Query Operators (How to use and when to use) - https://www.mongodb.com/docs/manual/reference/operator/query/
+      - **CREATE**: two methods to perform insert/create operation in mongodb
+        - db.collection.insertOne()
+        - db.collection.insertMany()
+      - **READ**: query a collection for documents
+        - db.collection.find()
+        - we can specify filters or criteria for returning specific documents
+      - **UPDATE**: following methods are used to update document(s) in a collection:
+        - db.collection.updateOne
+        - db.collection.updateMany()
+        - db.collection.replaceOne()
+      - **DELETE**: to remove one or more documents from a collection
+        - db.collection.deleteOne()
+        - db.collection.deleteMany()
+
+
+
+
+
+
+This is just the basics, the tip of the iceberg (5%) of MongoDB. Just learn it native to MongoDB (run commands via MongoDB Shell, directly on MongoDB Atlas or use MongoDB Compass)
+We will then start integrating with applications later!
