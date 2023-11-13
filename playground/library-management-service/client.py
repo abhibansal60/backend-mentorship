@@ -7,8 +7,6 @@ from bson.objectid import ObjectId
 from pymongo.collection import ReturnDocument
 
 
-
-
 client = motor.motor_asyncio.AsyncIOMotorClient()
 
 client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://abhi:abhi@cluster0.17p1u0e.mongodb.net/')

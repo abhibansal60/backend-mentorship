@@ -35,7 +35,7 @@ Starting with very basics, we will start with API Development... Learn the basic
 
 ## Task 2
 
-*We learnt the basics of API development and basics of FastAPI yesterday. While there is so much deep dive still about to happen, let's complete the basic building blocks first.*
+*We learned the basics of API development and basics of FastAPI yesterday. While there is so much deep dive still about to happen, let's complete the basic building blocks first.*
 
 Today, being Sunday I guess we can cover more topics...
 - [x] Start learning MongoDB - https://www.mongodb.com/docs/manual/introduction/
@@ -77,6 +77,42 @@ We will then start integrating with applications later!
 
 # Task 3
 
-### Learnings:
-- PyMongo doesn't support saving date instances. The server doesn't have a type for dates without times, so there would have to be some convention used to save dates without times. If you need to save a date your client should convert it to a datetime instance and you can save that.
+Integration time!! Now that we have learned how to build simple APIs in FastAPI, and basic CRUD in MongoDB, let's connect the two.
+
+Build a simple library management service --> create, update, delete students --> in FastAPI. Learn how to pass query params, request bodies and URL Params.... Follow the tutorial for help - https://fastapi.tiangolo.com/tutorial/
+The APIs should save, modify and delete the data in the database - Use MongoDB, spin up a free forever M0 cluster on MongoDB Atlas for testing....
+To use MongoDB in Python, we have pymongo as the official driver for Python. But this is a sync driver -- meaning, it will not have the goodness of async/await we learned that FastAPI comes out of the box with!
+To overcome this, MongoDB released their official Async Python driver - motor which is nothing but an async wrapper on PyMongo. So essentially the same functions/syntax, but just using AsyncIOMotorClient rather than MongoClient and also using async/await.....
+
+Help Links
+https://pymongo.readthedocs.io/en/stable/
+https://motor.readthedocs.io/en/stable/ (Use AsyncIO Tutorial - https://motor.readthedocs.io/en/stable/tutorial-asyncio.html)
+
+### How I approached the problem
+
+1. Went through the [task 2](#task-2) pointers
+2. Thought about coming up with 4 unique end points initially add,update,view,delete for each of the CRUD operations
+   1. But after giving a deeper thought I settled on having 4 endpoints with same name but different path or required operation
+     - **/health** - GET : A health check endpoint for proving that app is up and running.
+     - **/students/** - GET : Returns a JSON list(collection) of all the students in the database
+     - **/students/{id}** - GET: Returns a JSON Object(document) if a student exists in collection, with the requested id(in path params) else returns a meaningful response
+     - **/students/** - POST : Creates a student document if a valid the JSON Request body supplied with the request and then returns the newly created student document as a result with A unique id will be created and provided in the response.
+     - **/students/{id}** - PUT: Updates individual fields of an existing student record, Only the provided fields will be updated. Any missing or null fields will be ignored.
+     - **/students/{id}** - DELETE: Removes a single student record/document from the database based on the provided id.
+3. Code specifics:
+   1. [app.py](playground\library-management-service\app.py): Entry point of the application, containing all the endpoint definitions with path operation decorator.
+   2. [client.py](playground\library-management-service\client.py): A helper class for the mongodb related operations (CRUD).
+   3. [models.py](playground\library-management-service\models.py): Pydantic models for the document objects we require for the student collection in mongodb
+      -  StudentModel
+      -  UpdateStudentModel
+      -  Book
+
+
+
+### Learnings/Questions:
+
+- PyMongo doesn't support saving date instances. The server doesn't have a type for dates without times, so there would have to be some convention used to save dates without times. If you need to save a date your client should convert it to a datetime instance, and you can save that.
   - So datetime.date.today() should be replaced with datetime.datetime.today()
+- *id resolution problem*: I am just stuck at one point that Id we provide while creating the object say id: "S1", it gets converted to BSON Object ID because we are using ObjectId(id) before and as it gets save to mongodb something like "6551eb387e7bc34af6695746", But then while searching I still have to search by "6551eb387e7bc34af6695746" and not S1, which is weird, I must be missing the trick here [?]
+- We have used [Motor](https://motor.readthedocs.io/en/stable/tutorial-asyncio.html) to use mongodb with asynci in python 
+- References from https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/#creating-the-application helped to shape the application
