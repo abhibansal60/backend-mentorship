@@ -17,3 +17,10 @@ print(get_full_name("john","doe"))
 def process_items(items: list[str]):
     for item in items:
         print(item)
+
+
+## example of a dictionary
+def process_items(prices: dict[str, float]):
+    for item_name, item_price in prices.items():
+        print(item_name)
+        print(item_price)

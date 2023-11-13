@@ -70,10 +70,13 @@ Today, being Sunday I guess we can cover more topics...
         - db.collection.deleteOne()
         - db.collection.deleteMany()
 
-
-
-
-
-
 This is just the basics, the tip of the iceberg (5%) of MongoDB. Just learn it native to MongoDB (run commands via MongoDB Shell, directly on MongoDB Atlas or use MongoDB Compass)
 We will then start integrating with applications later!
+
+
+
+# Task 3
+
+### Learnings:
+- PyMongo doesn't support saving date instances. The server doesn't have a type for dates without times, so there would have to be some convention used to save dates without times. If you need to save a date your client should convert it to a datetime instance and you can save that.
+  - So datetime.date.today() should be replaced with datetime.datetime.today()
