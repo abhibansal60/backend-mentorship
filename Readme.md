@@ -92,17 +92,17 @@ https://motor.readthedocs.io/en/stable/ (Use AsyncIO Tutorial - https://motor.re
 
 1. Went through the [task 2](#task-2) pointers
 2. Thought about coming up with 4 unique endpoints initially add,update,view,delete for each of the CRUD operations
-   1. But after giving a deeper thought I settled on having 4 endpoints with same name but different path or required operation
+   1. But after giving a deeper thought I settled on having 4 endpoints with the same name but different paths or required operation
      - **/health** - GET : A health check endpoint for proving that app is up and running.
      - **/students/** - GET : Returns a JSON list(collection) of all the students in the database
      - **/students/{id}** - GET: Returns a JSON Object(document) if a student exists in collection, with the requested id(in path params) else returns a meaningful response
-     - **/students/** - POST : Creates a student document if a valid the JSON Request body supplied with the request and then returns the newly created student document as a result with A unique id will be created and provided in the response.
+     - **/students/** - POST : Creates a student document if a valid JSON Request body is supplied with the request and then returns the newly created student document as a result A unique id will be created and provided in the response.
      - **/students/{id}** - PUT: Updates individual fields of an existing student record, Only the provided fields will be updated. Any missing or null fields will be ignored.
      - **/students/{id}** - DELETE: Removes a single student record/document from the database based on the provided id.
 3. Code specifics:
-   1. [app.py](playground\library-management-service\app.py): Entry point of the application, containing all the endpoint definitions with path operation decorator.
-   2. [client.py](playground\library-management-service\client.py): A helper class for the mongodb related operations (CRUD).
-   3. [models.py](playground\library-management-service\models.py): Pydantic models for the document objects we require for the student collection in mongodb
+   1. [app.py](playground/library-management-service/app.py): Entry point of the application, containing all the endpoint definitions with path operation decorator.
+   2. [client.py](playground/library-management-service/client.py): A helper class for the mongodb related operations (CRUD).
+   3. [models.py](playground/library-management-service/models.py): Pydantic models for the document objects we require for the student collection in mongodb
       -  StudentModel
       -  UpdateStudentModel
       -  Book
