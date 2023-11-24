@@ -178,7 +178,10 @@ It has been almost 2 weeks into this program and we have covered a of things til
 Setting up the **Team X** 
   1. Teamed up with Anthony, Sidhhartha, Sumukha and had an intro call.
   2. Sumukha(Obsidian) created a server on Discord and added us to the same .
-  3. Team registration completed.
+
+### (23/11/2023)
+
+Team registration completed with Team name as **Team X**.
 
 ### (24/11/2023)
 
