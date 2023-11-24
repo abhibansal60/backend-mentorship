@@ -152,6 +152,7 @@ You can take the reference of above video and MongoDB documentation.
 Don't read any other blogs/articles/youtube. Might be old.
 
 # Project Start
+
 It has been almost 2 weeks into this program and we have covered a of things till now. You should all be familiar with these concepts till now -
 API Development in FastAPI (get, post, put, patch, delete)
 Familiar with async/await programming
