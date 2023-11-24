@@ -198,12 +198,12 @@ Now, first things first....
    * Data modelling in MongoDB is not a flat, normalised DB, alsooo it is not 100% embeddable. Somewhere in between.
    * Inspiration on Data Modelling concepts - https://www.mongodb.com/blog/post/building-with-patterns-a-summary
 
-   * This is an ⤴️ amazing read about Data modelling concepts, read only about -
-   * Attribute Pattern
-   * Bucket Pattern
-   * Extended Reference
-   * Polymorphic
-   * Tree
+     * This is an ⤴️ amazing read about Data modelling concepts, read only about -
+       * Attribute Pattern
+       * Bucket Pattern
+       * Extended Reference
+       * Polymorphic
+       * Tree
 
 #### Team X Update
 
