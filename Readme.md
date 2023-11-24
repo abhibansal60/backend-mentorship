@@ -164,12 +164,12 @@ It has been almost 2 weeks into this program and we have covered a of things til
 - Each group will have 3-4 members (more on members later)
 - Each group will be building an E-Commerce backend layer. (Why?)
 - E-commerce because it will teach us concepts like - 
-- Multiple models and relationships in MongoDB
-- Listing, creating, updating.
-- Full Text Search capabilities
-- Webhooks and integrations with Payment Gateways.
-- Async event streams (queues/kafka)
-- dockerising and deploying on cloud
+  - Multiple models and relationships in MongoDB
+  - Listing, creating, updating.
+  - Full Text Search capabilities
+  - Webhooks and integrations with Payment Gateways.
+  - Async event streams (queues/kafka)
+  - dockerising and deploying on cloud
 
 ## Project Progress
 
