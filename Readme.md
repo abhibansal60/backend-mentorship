@@ -116,3 +116,59 @@ https://motor.readthedocs.io/en/stable/ (Use AsyncIO Tutorial - https://motor.re
 - *id resolution problem*: I am just stuck at one point the Id we provide while creating the object say id: "S1", it gets converted to BSON Object ID because we are using ObjectId(id) before and as it gets save to MongoDB something like "6551eb387e7bc34af6695746", But then while searching I still have to search by "6551eb387e7bc34af6695746" and not S1, which is weird, I must be missing the trick here [?]
 - We have used [Motor](https://motor.readthedocs.io/en/stable/tutorial-asyncio.html) to use mongodb with asynci in python 
 - References from https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/#creating-the-application helped to shape the application
+
+# Task 4
+Lets start building complex queries in mongodb...
+Learn what are query operators -
+https://www.mongodb.com/docs/manual/reference/operator/query/
+
+Today let's learn how to build multiple logics in our Queries...
+$eq, $or, $in, $exists, $regex, $elemMatch, $all --> these are some important ones...!
+
+# Task 5
+Let's start learning about Aggregations! 🚀 
+We will be learning around this for a few days now, the magic starts now! Step by step, lets see what is Aggregations and then start building the most complicated stuff easily! ❤️
+
+This is going to change the way you look at databases and MongoDB now... 😍 
+
+https://www.mongodb.com/docs/manual/aggregation/
+https://www.mongodb.com/docs/manual/core/aggregation-pipeline/
+
+For today, Checkout how to use stages like - $match, $project, $sort, $limit, $count.
+Spend the most time in $project, understand how to calculate columns/fields on the fly, do operations and so much more!
+
+I'll be posting some questions and queries in sometime for you to work and solve!
+
+
+# Task 6
+Let's continue our journey with MongoDB Aggregations today -- last open day of learning prerequisites before we start with project tomorrow.
+
+Learn these stages -
+$group, $lookup, $unwind, $addFields, $count, $bucket
+
+Yes we can't learn and MUG everything but these are basics which you should when to use what so that when required we know what to Google.
+
+You can take the reference of above video and MongoDB documentation.
+Don't read any other blogs/articles/youtube. Might be old.
+
+# Project Start
+It has been almost 2 weeks into this program and we have covered a of things till now. You should all be familiar with these concepts till now -
+API Development in FastAPI (get, post, put, patch, delete)
+Familiar with async/await programming
+MongoDB as a database - CRUD and Aggregations, along with Motor client.
+Writing complex queries with MongoDB Aggregations (group, bucket, lookup, unwind)
+
+We are now going to start building projects (on a group level)
+Each group will have 3-4 members (more on members later)
+Each group will be building an E-Commerce backend layer. (Why?)
+E-commerce because it will teach us concepts like - 
+Multiple models and relationships in MongoDB
+Listing, creating, updating.
+Full Text Search capabilities
+Webhooks and integrations with Payment Gateways.
+Async event streams (queues/kafka)
+dockerising and deploying on cloud
+
+
+
+
