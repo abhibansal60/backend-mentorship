@@ -205,7 +205,12 @@ Now, first things first....
        * Polymorphic
        * Tree
 
+**My readings on the Patterns**: [Readings/Patterns.md](Readings/Patterns.md)
+
 #### Team X Update
+
+1. Team has decided to create a new repo for the project 
+2. I have created a repo named shopX https://github.com/abhibansal60/shopX
 
 
       
