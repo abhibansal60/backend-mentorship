@@ -187,7 +187,7 @@ Team registration completed with Team name as **Team X**.
 
 #### Task
 
-Yo @everyone lets start building our projects? _(22/11/2023)_
+Yo @everyone lets start building our projects? 
 Okay, so we are building an E-commerce application (you can pick a theme -- general, healthcare, fintech, foodtech, etc..) My favourite is PlayStation's PS Store (Every product will be same 😛)
 
 Now, first things first....
