@@ -154,21 +154,58 @@ Don't read any other blogs/articles/youtube. Might be old.
 # Project Start
 
 It has been almost 2 weeks into this program and we have covered a of things till now. You should all be familiar with these concepts till now -
-API Development in FastAPI (get, post, put, patch, delete)
-Familiar with async/await programming
-MongoDB as a database - CRUD and Aggregations, along with Motor client.
-Writing complex queries with MongoDB Aggregations (group, bucket, lookup, unwind)
 
-We are now going to start building projects (on a group level)
-Each group will have 3-4 members (more on members later)
-Each group will be building an E-Commerce backend layer. (Why?)
-E-commerce because it will teach us concepts like - 
-Multiple models and relationships in MongoDB
-Listing, creating, updating.
-Full Text Search capabilities
-Webhooks and integrations with Payment Gateways.
-Async event streams (queues/kafka)
-dockerising and deploying on cloud
+- API Development in FastAPI (get, post, put, patch, delete)
+- Familiar with async/await programming
+- MongoDB as a database - CRUD and Aggregations, along with Motor client.
+- Writing complex queries with MongoDB Aggregations (group, bucket, lookup, unwind)
+
+- We are now going to start building projects (on a group level)
+- Each group will have 3-4 members (more on members later)
+- Each group will be building an E-Commerce backend layer. (Why?)
+- E-commerce because it will teach us concepts like - 
+- Multiple models and relationships in MongoDB
+- Listing, creating, updating.
+- Full Text Search capabilities
+- Webhooks and integrations with Payment Gateways.
+- Async event streams (queues/kafka)
+- dockerising and deploying on cloud
+
+## Project Progress
+
+### (22/11/2023)
+
+Setting up the **Team X** 
+  1. Teamed up with Anthony, Sidhhartha, Sumukha and had an intro call.
+  2. Sumukha(Obsidian) created a server on Discord and added us to the same .
+  3. Team registration completed.
+
+### (24/11/2023)
+
+#### Task
+
+Yo @everyone lets start building our projects? _(22/11/2023)_
+Okay, so we are building an E-commerce application (you can pick a theme -- general, healthcare, fintech, foodtech, etc..) My favourite is PlayStation's PS Store (Every product will be same 😛)
+
+Now, first things first....
+   * Let's start with building our data models... for example - Products, Cart, Orders, Users, etc...
+   * Let's see how you build the models in Pydantic (pydantic classes) thinking about relationships and nesting...
+
+   * Relationships in MongoDB are not PrimaryKey/ForeignKey.. get help reading about $lookup stage and ObjectId.
+   * Data modelling in MongoDB is not a flat, normalised DB, alsooo it is not 100% embeddable. Somewhere in between.
+   * Inspiration on Data Modelling concepts - https://www.mongodb.com/blog/post/building-with-patterns-a-summary
+
+   * This is an ⤴️ amazing read about Data modelling concepts, read only about -
+   * Attribute Pattern
+   * Bucket Pattern
+   * Extended Reference
+   * Polymorphic
+   * Tree
+
+#### Team X Update
+
+
+      
 
 
 
