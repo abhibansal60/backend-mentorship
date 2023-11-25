@@ -205,6 +205,16 @@ Now, first things first....
        * Polymorphic
        * Tree
 
+#### Submission Task
+Start building your E-Commerce Project in a single Git Repo (shared with team) make it public or give access to me - @shreybatra on Github.
+Make a folder models with your Pydantic Models in some python files and explain about them in a README file in that folder.
+- models
+  --- user_model.py
+  --- prouducts_model.py
+  --- README.md # This is important
+- .gitignore
+- README.md
+
 **My readings on the Patterns**: [Readings/Patterns.md](Readings/Patterns.md)
 
 #### Team X Update
