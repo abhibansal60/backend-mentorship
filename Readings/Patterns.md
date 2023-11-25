@@ -50,3 +50,26 @@ _References from:_ https://www.mongodb.com/blog/post/building-with-patterns-the-
 
 
 Summary of the patterns can be found [here](https://www.mongodb.com/blog/post/building-with-patterns-a-summary)
+
+### Polymorphic Pattern
+
+**When to use ?**
+
+1. When we have similar looking but not identical data We can go for this pattern.
+
+It can be used for something like product catalogs
+
+The examples and sample use cases are well-defined in the reference link below
+
+_References from:_ https://www.mongodb.com/developer/products/mongodb/polymorphic-pattern/ 
+
+
+### Tree Pattern
+
+**When to use ?**
+
+1. When there is a hierarchical relation between the entities.
+
+This can also be used for product catalogs, adding product to a category, which can itself be a sub category 
+
+_References from:_ https://www.mongodb.com/blog/post/building-with-patterns-the-tree-pattern
